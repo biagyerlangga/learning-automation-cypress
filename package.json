@@ -1,0 +1,22 @@
+{
+  "name": "automationcypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "recordDashBoardTest" : "npx cypress run --record --keynpx cypress run --record --key 4d0ab7fb-282b-4e3c-a362-8f3fbe0c9e3d",
+    "chromeTest" : "npx run test --browser chrome",
+    "E2EFlowTest" : "npx cypress run --spec \"cypress/integration/examples/E2ETestFlow.js/*\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.5.2",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  },
+  "dependencies": {
+    "cypress-iframe": "^1.0.1"
+  }
+}
