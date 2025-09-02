@@ -1,10 +1,11 @@
+const dotenv = require("dotenv").config()
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
 
 reporter:"cypress-mochawesome-reporter",
   env: {
-    url : "https://rahulshettyacademy.com"
+    url : process.env.TEST_URL
     // https://rahulshettyacademy.com
   },
 
